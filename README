@@ -1,0 +1,50 @@
+PwnberryPi: A Pentesting Suite for the Raspberry Pi
+
+**Based on Pwnie Express's Raspberry Pwn https://github.com/pwnieexpress/Raspberry-Pwn
+
+
+----------------------------------------------
+What you will need
+----------------------------------------------
+
+1. A stock Raspberry Pi board (http://www.raspberrypi.org/)
+2. The Debian Raspberry Pi distribution (http://elinux.org/RPi_Beginners)
+3. SSH/console access to the Raspberry Pi
+4. Internet access from the Raspberry Pi
+
+----------------------------------------------
+Installation Steps
+----------------------------------------------
+
+**NOTE:** It is strongly recommended that this is installed on a 4GB SD Card!
+
+For Instructions on how to expand the partition on the SD card, see the follow URL: http://elinux.org/RPi_Easy_SD_Card_Setup
+
+1. Change to the root user:
+
+  # sudo su
+
+2. Confirm your Raspberry Pi Debian release is at least 6.0:
+
+  # cat /etc/debian_version
+
+3. Confirm you have internet access from your Raspberry Pi
+
+  # ping google.com
+
+4. Install git:
+
+  # aptitude -y install git
+
+5. Download the PwnberryPi installer from the g13net Github repository:
+
+  # git clone https://github.com/g13net/PwnberryPi.git
+
+6. CD into the PwnberryPi folder and run the install script:
+
+  # cd PwnberryPi
+
+  # ./install-pwnberrypi.sh
+
+
+
