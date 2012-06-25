@@ -1,5 +1,5 @@
 #!/bin/bash
-# PwnberryPi - Pentesting Suite for Raspberry Pi
+# PwnBerryPi - Pentesting Suite for Raspberry Pi
 # g13net.com
 
 
@@ -13,18 +13,26 @@ fi
 
 # Verify RaspPwn  is not already installed
 if [ "`grep -o 0.1 /etc/motd.tail`" == "1.0" ] ; then 
-        echo "[-] PwnberryPi already installed. Aborting..."
+        echo "[-] PwnBerryPi already installed. Aborting..."
         exit 1
 fi
 
+echo ""
+echo " PwnBerry Pi - 1.0 "
+echo ""
 echo " This installer will load a comprehensive security pentesting   "
 echo " software suite onto your Raspberry Pi. Note that the Debian    "
 echo " Raspberry Pi distribution must be installed onto the SD card   "
 echo " before proceeding. See README.txt for more information.       "
 echo ""
+echo " Warning: This install process will take quite a long time.  "
+echo " Please do not interrupt it!"
+echo ""
 echo "Press ENTER to continue, CTRL+C to abort."
 read INPUT
 echo ""
+
+
 
 # Make sure all installer files are owned by root
 chown -R root:root .
@@ -101,7 +109,7 @@ cp src/motd.tail.pwnberrypi /etc/motd.tail
 
 echo ""
 echo "---------------------------------------------------------------"
-echo "PwnberryPi Release 0.1 installed successfully!"
+echo "PwnBerryPi Release 1.0 installed successfully!"
 echo "---------------------------------------------------------------"
 echo ""
 exit 1
