@@ -38,7 +38,7 @@ For Instructions on how to expand the partition on the SD card, see the follow U
 
 5. Download the PwnBerryPi installer from the g13net Github repository:
 
-  # git clone https://github.com/g13net/PwnberryPi.git
+  # git clone https://github.com/g13net/PwnBerryPi.git
 
 6. CD into the PwnBerryPi folder and run the install script:
 
