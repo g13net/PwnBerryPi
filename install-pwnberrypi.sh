@@ -71,6 +71,8 @@ echo "[+] Wireless pentesting tools installed."
 # Install Metasploit
 echo "[+] Installing latest Metasploit Framework..."
 # Setting more RAM available for Metasploit
+echo ""
+echo "[+] Changing RAM to 224/32 Split"
 cp /boot/arm224_start.elf /boot/start.elf
 aptitude -y install ruby irb ri rubygems libruby ruby-dev libpcap-dev
 mkdir /opt/metasploit
