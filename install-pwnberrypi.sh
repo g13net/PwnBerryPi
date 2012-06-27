@@ -11,7 +11,7 @@ if [[ $EUID -ne 0 ]]; then
    exit 1
 fi
 
-# Verify RaspPwn  is not already installed
+# Verify PwnBerryPi  is not already installed
 if [ "`grep -o 0.1 /etc/motd.tail`" == "1.0" ] ; then 
         echo "[-] PwnBerryPi already installed. Aborting..."
         exit 1
@@ -108,6 +108,11 @@ echo "[+] Exploit-DB installed in /pentest."
 
 # Update motd to show Raspberry Pwn release
 cp src/motd.tail.pwnberrypi /etc/motd.tail
+
+#change hostname
+cp /etc/hosts src/hosts.old
+cp src/hosts.pwnberrypi /etc/hosts
+
 
 echo ""
 echo "---------------------------------------------------------------"
