@@ -116,6 +116,8 @@ cp src/hosts.pwnberrypi /etc/hosts
 echo ""
 echo "---------------------------------------------------------------"
 echo "PwnBerryPi Release 1.0 installed successfully!"
+echo ""
+echo "It is recommened that you reboot your system"
 echo "---------------------------------------------------------------"
 echo ""
 exit 1
