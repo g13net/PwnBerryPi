@@ -75,11 +75,10 @@ echo ""
 echo "[+] Changing RAM to 224/32 Split"
 cp /boot/arm224_start.elf /boot/start.elf
 aptitude -y install ruby irb ri rubygems libruby ruby-dev libpcap-dev
-mkdir /opt/metasploit
-cd /opt/metasploit
 wget http://downloads.metasploit.com/data/releases/framework-latest.tar.bz2
-tar jxvf framework-latest.tar.bz2
-ln -sf /opt/metasploit/msf3/msf* /usr/local/bin/
+cp framework-latest.tar.bz2 /opt
+tar jxvf /opt/framework-latest.tar.bz2
+ln -sf /opt/msf3/msf* /usr/local/bin/
 echo "[+] Latest Metasploit Framework installed."
 
 # Install Perl/Python tools to /pentest
