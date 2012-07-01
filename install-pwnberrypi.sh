@@ -112,7 +112,8 @@ cp src/motd.tail.pwnberrypi /etc/motd.tail
 #change hostname
 cp /etc/hosts src/hosts.old
 cp src/hosts.pwnberrypi /etc/hosts
-
+cp /etc/hostname /etc/hostname.old
+cp src/hostname /etc/hostname
 
 echo ""
 echo "---------------------------------------------------------------"
