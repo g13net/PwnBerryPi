@@ -34,6 +34,10 @@ cd ../..
 echo "[+] Removing /pentest..."
 rm -rf /pentest
 
+echo "[+] Removing Metasploit"
+rm -rf /opt/msf3
+rm /usr/local/bin/msf*
+
 # Restore original motd
 cp src/motd.tail.original /etc/motd.tail
 
