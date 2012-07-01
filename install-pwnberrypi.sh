@@ -91,6 +91,7 @@ chmod +x /pentest/easy-creds/easy-creds.sh
 chmod +x /pentest/goohost/goohost.sh
 chmod +x /pentest/lbd/lbd.sh
 chmod +x /pentest/sslstrip/sslstrip.py
+#lets get the dev version of sqlmap - full of more awesomesauce.
 git clone https://github.com/sqlmapproject/sqlmap.git /pentest/sqlmap
 echo "[+] Perl/Python tools installed in /pentest."
 
